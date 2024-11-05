@@ -1,0 +1,3106 @@
+{
+	"info": {
+		"_postman_id": "d12a53f4-268b-4faa-bb27-0009622b9e6c",
+		"name": "Softrock_Food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24640204",
+		"_collection_link": "https://wearesoftrock.postman.co/workspace/Softrock~4696ff3a-990b-4ac0-8e9c-5a400df688fd/collection/24640204-d12a53f4-268b-4faa-bb27-0009622b9e6c?action=share&source=collection_link&creator=24640204"
+	},
+	"item": [
+		{
+			"name": "Global",
+			"item": [
+				{
+					"name": "SearchMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"ppapa\",\r\n    \"Gen\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"findfood\":\"\",\r\n    \"Province\":\"ใกล้ฉัน\",\r\n    \"Lat\":\"13.0254885\",\r\n    \"Long\":\"-122.084\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/searchmenu",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"searchmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"ppapa\",\r\n    \"Gen\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"findshop\":\"\",\r\n    \"Province\":\"ใกล้ฉัน\",\r\n    \"Lat\":\"37.4219983\",\r\n    \"Long\":\"-122.084\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/searchshop",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"searchshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Nameshop\":\"aaabbbbb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/showshop",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"showshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nameshop\":\"\",\r\n    \"Idshop\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showcategory",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowCategoryAndMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"Nameshop\": \"banny\",\r\n      \"Idshop\": \"8812\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showcategoryandmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showcategoryandmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idcategory\":\"\",\r\n    \"Idshop\":\"8812\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowShopandMenuandSubjectandOption",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nameshop\":\"aaabbbbb\",\r\n    \"Idshop\":\"6166\",\r\n    \"Idmenu\":\"158\",\r\n    \"Lat\":\"12.0000\",\r\n    \"Long\":\"100.00121\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showshopandmenuandsubjectandoption",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showshopandmenuandsubjectandoption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Totalmenuorder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Iduser\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/totalmenuorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"totalmenuorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"ppapa\",\r\n    \"Ipaddress\":\"183.88.237.228\",\r\n    \"Chanelcode\":\"creditcard\",\r\n    \"Datewanttogo\":\"2023-6-7 13:48:30\",\r\n    \"Amounttakefood\":\"1\",\r\n    \"Star\":\"0\",\r\n    \"Placetakefood\":\"ทานที่ร้าน\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/payment",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteTotalmenuOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idorder\":\"162\",\r\n    \"Nameuser\":\"ppapa\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/deletetotalmenuorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"deletetotalmenuorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByhitMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Lat\":\"13.999041034103746\",\r\n    \"Long\":\"100.52346414987403\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/searchhitmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"searchhitmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByhitshop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Lat\":\"13.99890646643438\",\r\n    \"Long\":\"100.51882805358062\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/searchhitshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"searchhitshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchShopFromStar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Lat\":\"13.99890646643438\",\r\n    \"Long\":\"100.51882805358062\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/searchshopfromstar",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"searchshopfromstar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Showmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showmail",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Showadvertising",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Province\":\"\",\r\n    \"Iduser\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showadvertising",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showadvertising"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DiscountAds",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"Idads\":\"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/discountadvertising",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"discountadvertising"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Privacy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/privacy",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"privacy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancleMenuOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_order\":\"65015517846\",\r\n    \"Id_usr\":\"121\",\r\n    \"Id_menuorder\":\"425\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/canclemenuorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"canclemenuorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreditPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"132\",\r\n    \"Username\":\"popo\",\r\n    \"TokenUser\":\"bayOk3Y32VCQtQKwA55YAMpCkBNjuo\",\r\n    \"DatePayment\":\"2023-8-8 13:11:00\",\r\n    \"Totalpayment\":\"100\",\r\n    \"PicPayment\":\"random Pic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/creditpayment",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"creditpayment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendProblem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_user\":\"132\",\r\n    \"Token\":\"bayOk3Y32VCQtQKwA55YAMpCkBNjuo\",\r\n    \"Comment\":\"แอปดีมีคุณภาพครับ ไม่มีปัญหา\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/sendproblem",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"sendproblem"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Provinces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HTTP_URL}}/provinces",
+							"host": [
+								"{{HTTP_URL}}"
+							],
+							"path": [
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Districts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"districts\":\"testforsendapinaja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/districts",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"districts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subdistricts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subdistricts\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/subdistricts",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"subdistricts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/getyear",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"getyear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Version",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"System\":\"android\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/version",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateVersion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"System\":\"android\",\r\n        \"Version\":\"1.0.0.1\",\r\n        \"Id_admin\":\"82\",\r\n        \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/updateversion",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"updateversion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SeenNotification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_notification\":\"253\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/seennotification",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"seennotification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get_allUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/users",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Devicename\":\"efw23234;klsdjf\",\r\n    \"Email\":\"niranam18ja@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/registeremail",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"registeremail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify_register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\",\r\n    \"verify\":\"255333\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/verifyregister",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"verifyregister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\",\r\n    \"Iduser\":\"104\",\r\n    \"Tel\" :\"0967793322\",\r\n    \"Username\" :\"poechi\",\r\n    \"Pass\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/register",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reverify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/reverify",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"reverify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForgetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/forgetpassword",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"forgetpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyForgetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\",\r\n    \"Verify\":\"640638\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/verifyforgetpassword",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"verifyforgetpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ComFirmPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\",\r\n    \"TokenVerify\":\"JbZdTnaMa1gfnbwS7N7UbLwce1u1jL\",\r\n    \"NewPassword\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/comfirmpassword",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"comfirmpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReverifyForgetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Email\":\"niranam18ja@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/reverifyforgetpassword",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"reverifyforgetpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"8mena\",\r\n    \"Password\":\"12345678\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/login",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log_Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"Ipnet\":\"test\",\r\n        \"Typephone\":\"test\",\r\n        \"Brandphone\":\"test\",\r\n        \"Modelphone\":\"test\",\r\n        \"Version\":\"test\",\r\n        \"Latitude\":\"test\",\r\n        \"Longitude\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Url}}/loglogin",
+							"host": [
+								"{{Url}}"
+							],
+							"path": [
+								"loglogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListorderUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/listorderuser",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"listorderuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListmenuinorderUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\",\r\n    \"Idorder\":\"74807221766\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/listmenuinorderuser",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"listmenuinorderuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuccessfullyOrdered",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idorder\":\"67445390395\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/successfullyordered",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"successfullyordered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowUserEdit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/showuseredit",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"showuseredit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditProfileUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"\",\r\n    \"Token\":\"\",\r\n    \"Password\":\"\",\r\n    \"Username\":\"\",\r\n    \"Tel\":\"\",\r\n    \"Pic\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/editprofileuser",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"editprofileuser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shop",
+			"item": [
+				{
+					"name": "RegisterShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nameshop\":\"aof\",\r\n    \"Name\":\"popo\",\r\n    \"Sur\":\"boon\",\r\n    \"Age\":\"38\",\r\n    \"Email\":\"porschenetz@gmail.com\",\r\n    \"Tel\":\"0934374848\",\r\n    \"Picpayment\":\"asfs\",\r\n    \"Idpayment\":\"lkjsf\",\r\n    \"Idcard\":\"1100200098028\",\r\n    \"Picidcard\":\"ไปหารูปใส่\",\r\n    \"Address\":\"71/162\",\r\n    \"Province\":\"ปทุมธานี\",\r\n    \"District\":\"เมือง\",\r\n    \"Amphur\":\"เมือง\",\r\n    \"Latitude\":\"\",\r\n    \"Longitude\":\"\",\r\n    \"Profile\":\"\",\r\n    \"Background\":\"\",\r\n    \"Open\":\"\",\r\n    \"Close\":\"\",\r\n    \"Username\":\"popo\",\r\n    \"Gen\":\"bayOk3Y32VCQtQKwA55YAMpCkBNjuo\",\r\n    \"Dayb\":\"\",\r\n    \"Monthb\":\"\",\r\n    \"Yearb\":\"\",\r\n    \"Id_partner\":\"82\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/regis",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"regis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Iduser\":\"82\",\r\n    \"Pic\":\"ASDasd\",\r\n    \"Name\":\"asdfasdf\",\r\n    \"Price\":\"124\",\r\n    \"Time\":\"12\",\r\n    \"Gen\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"Category\":\"ของอะไร\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdMenu\":\"107\",\r\n    \"IdUser\":\"82\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/deletemenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"deletemenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"\",\r\n    \"Nameshop\":\"\",\r\n    \"Namecategory\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addcategory",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idcategory\":\"\",\r\n    \"Idshop\":\"\",\r\n    \"Username\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/deletecategory",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"deletecategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddSubject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"what the world\",\r\n    \"Id_menu\":\"155\",\r\n    \"Type\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addsubject",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addsubject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSubject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"\",\r\n    \"Idshop\":\"\",\r\n    \"Iduser\":\"\",\r\n    \"Idmenu\":\"\",\r\n    \"Idsubject\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/deletesubject",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"deletesubject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddOption",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"nope\",\r\n    \"Price\":\"20\",\r\n    \"Id_sub\":\"131\",\r\n    \"Type\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addoption",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addoption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteOption",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"\",\r\n    \"Idshop\":\"\",\r\n    \"Iduser\":\"\",\r\n    \"Idsubject\":\"\",\r\n    \"Idoption\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/deleteoption",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"deleteoption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\":\"\",\r\n    \"Idshop\":\"\",\r\n    \"Iduser\":\"\",\r\n    \"Idmenu\":\"\",\r\n    \"Pic\":\"\",\r\n    \"Price\":\"\",\r\n    \"Time\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/editmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"editmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConFirmmenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_shop\":\"6166\",\r\n    \"Id_menu\":\"147\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/confirmmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"confirmmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMenuShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/getmenushop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"getmenushop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idmenu\":\"119\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/getmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"getmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchMenuPromotion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name_shop\":\"aaabbbbb\",\r\n    \"Id_shop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/searchmenupromotion",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"searchmenupromotion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPromotion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\": \"5202\",\r\n    \"Nameshop\": \"fdgg\",\r\n    \"Pic\": \"ajsdlfja;slf\",\r\n    \"Namepromotion\": \"i don't know \",\r\n    // you must to format json to string before you send to backend \r\n    \"Arraymenu\": [\r\n        {\r\n            \"Idmenu\": \"92\",\r\n            \"Namemenu\": \"sdfc\",\r\n            \"Pricemenu\": \"123\"\r\n        }\r\n    ],\r\n    \"Totalpurches\": \"2\",\r\n    \"Unitofnumber\": \"ชิ้น\",\r\n    \"Discountorgive\": \"แถม\",\r\n    \"Amountornamemenu\": \"100\",\r\n    \"Accumulate\": \"0\",\r\n    \"Cumulativeamount\": \"0\",\r\n    \"Username\": \"ppapa\",\r\n    \"Minstart\": \"20\",\r\n    \"Hourstart\": \"8\",\r\n    \"Minstop\": \"0\",\r\n    \"Hourstop\": \"18\",\r\n    \"Yearstart\": \"2022\",\r\n    \"Monthstart\": \"7\",\r\n    \"Daystart\": \"3\",\r\n    \"Yearstop\": \"2023\",\r\n    \"Monthstop\": \"2\",\r\n    \"Daystop\": \"9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addpromotion",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addpromotion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckAccess",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"9178\",\r\n    \"Usernameshop\":\"Aof1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/checkaccess",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"checkaccess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPromotion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/getallpromotion",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"getallpromotion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOnePromotion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Idpromotion\":\"58\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/getonepromotion",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"getonepromotion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowShop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/shop/showshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":\"\",\r\n    \"Gen\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/usershop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"usershop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"Option\": \"\",\r\n        \"Quantity\":\"\",\r\n        \"Idshop\":\"\",\r\n        \"Nameshop\":\"\",\r\n        \"Idmenu\":\"\",\r\n        \"Namemenu\":\"\",\r\n        \"Iduser\":\"\",\r\n        \"Username\":\"\",\r\n        \"Lat\":\"\",\r\n        \"Long\":\"\",\r\n        \"Comment\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"\",\r\n    \"Usernameshop\":\"\",\r\n    \"Employeeusername\":\"\",\r\n    \"Addmenu\":\"\",\r\n    \"Edit\":\"\",\r\n    \"Makefood\":\"\",\r\n    \"Addemployee\":\"\",\r\n    \"Addpromotion\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/addemployee",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"addemployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListMenuinOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Idorder\":\"94464433436\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/listmenuinorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"listmenuinorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListorderShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/listordershop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"listordershop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CommentShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\",\r\n    \"Idshop\":\"6166\",\r\n    \"Star_cookingSpeed\":\"5\",\r\n    \"Idorder\":\"83610402758\",\r\n    \"Star_Taste\":\"4\",\r\n    \"Comment\":\"your soup so good boy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/comment",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStatusorder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idorder\":\"27684735993\",\r\n    \"Idshop\":\"8894\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/updatestatusorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"updatestatusorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Showshopwithdraw",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Datestart\":\"2023-9-7 00:00:00\",\r\n    \"Datestop\":\"2023-9-7 22:59:59\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/showshopwithdraw",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showshopwithdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShopWithdrawRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Amount\":\"12\",\r\n    \"Iduser\":\"82\",\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/shopwithdrawrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"shopwithdrawrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowTotalWithdrawshop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/showtotalwithdraw",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showtotalwithdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowshopwithdrawSuccess",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/showwithdrawsuccess",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showwithdrawsuccess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindLogMenuOrderDate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Sortby\":\"1\",\r\n    \"Datestart\":\"2023-9-3 00:00:00\",\r\n    \"Datestop\":\"2023-9-4 23:59:59\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/findlogmenuorderusedate",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"findlogmenuorderusedate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"5202\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/deleteshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"deleteshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CloseShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Iduser\":\"82\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/closeshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"closeshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\",\r\n    \"Iduser\":\"82\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/openshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"openshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CloseMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_user\" :\"82\",\r\n    \"Token\":\"\",\r\n    \"Id_shop\":\"\",\r\n    \"Id_menu\" :\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/closemenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"closemenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpenMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_user\" :\"82\",\r\n    \"Token\":\"\",\r\n    \"Id_shop\":\"\",\r\n    \"Id_menu\" :\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/openmenu",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"openmenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GivestarShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Star_taste\":\"5\",\r\n    \"Star_fast\":\"5\",\r\n    \"Iduser\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/givestar",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"givestar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Advertising",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"Province\":\"ปทุม\",\r\n        \"District\":\"เมือง\",\r\n        \"Subdistrict\":\"บางเดื่อ\",\r\n        \"Ipaddress\":\"127.0.0.1\",\r\n        \"Chanelcode\":\"creditcard\",\r\n        \"Gender\":\"0\",\r\n        \"Max_age\":\"80\",\r\n        \"Min_age\":\"10\",\r\n        \"Pic\":\"put your picture\",\r\n        \"Iduser\":\"82\",\r\n        \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n        \"Idshop\":\"6166\",\r\n        \"Discount_perseen\":\"\",\r\n        \"Balance\":\"200\",\r\n        \"Typesend\":\"home page\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/registeradvertising",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"registeradvertising"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowAds",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_ads\":\"\",\r\n    \"Id_admin\":\"\",\r\n    \"Token\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/allowads",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"allowads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllwithdrawShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/showallwithdrawshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showallwithdrawshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChcekOwnShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_user\":\"119\",\r\n    \"Id_shop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/checkownshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"checkownshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowDetailShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_usr\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"Id_shop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/showdetailshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showdetailshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_usr\":\"119\",\r\n    \"Token\":\"CtfIlxoKzCAhTHUXBhoUkYLOd3LPAP\",\r\n    \"Realname\":\"Teerapat\",\r\n    \"Surname\":\"Rungtaweesub\",\r\n    \"Pic\":\"asdkfjnawoelonfoaenf\",\r\n    \"Id_Payment\":\"1122002544\",\r\n    \"Profile\":\"akejfnalsnfkbwe;of\",\r\n    \"Background\" :\"asdfwinefoinwef\",\r\n    \"Tel\":\"0967793322\",\r\n    \"Open_shop\":\"6.30\",\r\n    \"Close_shop\":\"18.9\",\r\n    \"Lat\":\"123.00215\",\r\n    \"Long\":\"52.2154\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/editshop",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"editshop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowLogeditProfileShop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/shop/showlogeditprofile",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showlogeditprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancleOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_order\":\"26647221365\",\r\n    \"Id_shop\":\"2275\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/cancleorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"cancleorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowStatusOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_order\":\"18445649534\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/shop/showstatusorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"shop",
+								"showstatusorder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Partner",
+			"item": [
+				{
+					"name": "Registerpartner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\" :\"ppapa\",\r\n    \"Name\" :\"teerapat\",\r\n    \"Lastname\":\"Rungtaweesub\",\r\n    \"Gender\":\"male\",\r\n    \"Birthdate\":\"19/2/66\",\r\n    \"Address\":\"asdf\",\r\n    \"Province\":\"somewhere\",\r\n    \"District\":\"somewhere\",\r\n    \"Subdistrict\":\"somewhere\",\r\n    \"Picpayment\":\"asfs\",\r\n    \"Idpayment\":\"lkjsf\",\r\n    \"PicIdcard\":\"asfasesefasdfea\",\r\n    \"Latitude\" :\"103.774141\",\r\n    \"Longitude\" :\"108.333333\",\r\n    \"NameDevice\":\"asdfe\",\r\n    \"Model\" :\"asdfaef\",\r\n    \"OsDevice\":\"asdfasef\",\r\n    \"PhoneNumber\":\"0258869978\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/register",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckAccesspartner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/partner/checkaccessregisterpartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"checkaccessregisterpartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "withdrawRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"80\",\r\n    \"Amount\":\"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/wihtdrawrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"wihtdrawrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowshopPartner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idpartner\":\"146\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/showshoppartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"showshoppartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowallWithdrawpartner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idpartner\":\"80\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/showallwithdrawpartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"showallwithdrawpartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowProfilePartner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_usr\":\"142\",\r\n    \"Token\":\"Ehp58kmtyrvxTfktWJZg8fZiq4ZULY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/showprofilepartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"showprofilepartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowWithdraw",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_partner\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/showwithdraw",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"showwithdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditPartner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_usr\": \"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"Realname\":\"Teerapt\",\r\n    \"Surname\":\"Runtaweesub\",\r\n    // \"Id_partner\":\"73\",\r\n    \"Tel\":\"0369998744;\",\r\n    \"PicPayment\":\"kjlkn;jn;\",\r\n    \"IdPayment\":\"0483228395\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/partner/editpartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"editpartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowEditProfilePartner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/partner/showlogeditprofile",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"showlogeditprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Getpartner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/partner/getpartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"partner",
+								"getpartner"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Botline",
+			"item": [
+				{
+					"name": "Testsendline",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/testsend",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"testsend"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetusersLine",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer A3OSzfacw3zCU0V2mpoJf5NlLNTEUuGBs89wlVUeB/rHq+OQ28K3EELOpN4p8wgBaWYLML1Iqyi+q1ClpJw2gfxB9YaxmGypMJDxeNxU988MjD4TRWiTe3e4x6Df4SxoKpKceG/jmYxzOY13iRADxAdB04t89/1O/w1cDnyilFU=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.line.me/v2/bot/followers/ids",
+							"protocol": "https",
+							"host": [
+								"api",
+								"line",
+								"me"
+							],
+							"path": [
+								"v2",
+								"bot",
+								"followers",
+								"ids"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "ShowShopRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nameshop\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showshoprequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showshoprequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowMenuRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Namemenu\":\"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showmenurequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showmenurequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowMenuRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idmenu\":\"90\",\r\n    \"Username\":\"82\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowmenurequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowmenurequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowShopRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":[{\r\n        \"Idshop\":\"9178\"\r\n    }],\r\n    \"Username\":\"ppapa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowshoprequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowshoprequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Showpartnerrequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/admin/showpartnerrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showpartnerrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Allowpartner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_admin\":\"82\",\r\n    \"Id_usr_partner\":\"143\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowpartner",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowpartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowShopwithdrawRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idshop\":\"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showshopwitdrawrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showshopwitdrawrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowShopwithdrawRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Iduser\":\"82\",\r\n    \"Idshop\":\"6166\",\r\n    \"Idwithdraw\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowshopwithdrawrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowshopwithdrawrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowwithdrawRequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/admin/showwithdrawrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showwithdrawrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowwithdrawPartnerRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Idadmin\":\"82\",\r\n    \"Idpartner\":\"1\",\r\n    \"Iduser\":\"80\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowwihtdrawrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowwihtdrawrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowShopSuccessWithdraw",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Datestart\":\"2023-02-27 16:21:39\",\r\n    \"Datestop\":\"2023-03-11 15:21:06\",\r\n    \"Nameshop\":\"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showshopsuccesswithdraw",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showshopsuccesswithdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Showlistordersuccess",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Datestart\":\"2023-01-1 16:21:39\",\r\n    \"Datestop\":\"2023-09-04 23:44:20\",\r\n    \"Idshop\":\"6166\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showordersuccess",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showordersuccess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowOrderDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_admin\":\"82\",\r\n    \"Token\" :\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"Datestart\":\"2023-5-1 12:2:33\",\r\n    \"Datestop\":\"2023-8-26 21:32:10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showorderdetail",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showorderdetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdAdmin\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\",\r\n    \"IdPayment\":\"20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowpayment",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowpayment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowPaymantRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_admin\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showpaymentrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showpaymentrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowCancleORderRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_admin\":\"82\",\r\n    \"Token\":\"DKcYMdnxKPuZ4PHQvHiPBKZ8Sblgjg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/showcancleorderrequest",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showcancleorderrequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllowCancleOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id_admin\":\"\",\r\n    \"Token\":\"\",\r\n    \"Id_cancleorder\":\"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_Url}}/admin/allowcancleorder",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"allowcancleorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowSendProblem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_Url}}/admin/showsendproblem",
+							"host": [
+								"{{Base_Url}}"
+							],
+							"path": [
+								"admin",
+								"showsendproblem"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "Url",
+			"value": "https://www.softrockthai.com:3001"
+		}
+	]
+}
